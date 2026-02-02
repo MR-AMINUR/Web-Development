@@ -21,8 +21,14 @@ li[value="4"] {
     color: blue;
 }
 
-* {
-    text-align: center;
+.color-title {
+
+    color: red;
+}
+
+.red {
+    height: 4px;
+    width: 4px;
 }
 
 
