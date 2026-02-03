@@ -21,14 +21,52 @@ li[value="4"] {
     color: blue;
 }
 
-.color-title {
-
+h2[id = "red"] {
     color: red;
+}
+h2[id = "blue"] {
+    color: blue;
+}
+h2[id = "orange"] {
+    color: orange;
+}
+h2[id = "green"] {
+    color: green;
+}
+h2[id = "yellow"] {
+    color: yellow;
 }
 
 .red {
     height: 4px;
     width: 4px;
 }
+.color-box-rojo {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.color-box-blue {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.color-box-orange {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+}
+.color-box-green {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
+.color-box-yellow {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+
+
 
 
