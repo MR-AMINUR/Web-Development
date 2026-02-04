@@ -67,6 +67,26 @@ h2[id = "yellow"] {
     background-color: yellow;
 }
 
+.container {
 
+    display: flex;
+    gap: 8%;
+}
+
+.one {
+    float: left;
+    width: 25%;
+    background-color: greenyellow;
+}
+.two {
+    float: left;
+    width: 25%;
+    background-color: pink;
+}
+.three {
+    float: left;
+    width: 40%;
+    background-color: aquamarine;
+}
 
 
