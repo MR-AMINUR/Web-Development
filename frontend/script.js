@@ -7,4 +7,11 @@ var1 = 8;
 var2 = 5;
 
 var3 = var1 + var2;
-console.log(var3 );
+//console.log(var3 );
+
+const fs = require("fs");
+
+fs.writeFile("message.txt", "Hello from NodeJS!", (err) => {
+    if (err) throw err;
+    console.log("The file has been saved!");
+});
