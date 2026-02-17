@@ -1,12 +1,12 @@
 // console.log("Hello from VS Code!");
 
-var myName = "Aminur";
-// console.log(myName);
+// var myName = "Aminur";
+// // console.log(myName);
 
-var1 = 8;
-var2 = 5;
+// var1 = 8;
+// var2 = 5;
 
-var3 = var1 + var2;
+// var3 = var1 + var2;
 //console.log(var3 );
 
 //const fs = require("fs");
@@ -21,7 +21,9 @@ var3 = var1 + var2;
 //     console.log(data);
 // });
 
-import sm from superman;
+import superman from "superman";
 
-sm
+const name = superman.random();
+
+console.log(`I am ${name}!`);
 
