@@ -41,6 +41,9 @@ let value = 3
 let neg = -value
 // console.log(neg);
 
-console.log("1"+ 2 + 2);
-console.log(1+ 2 + "2");    // Bad practice , use parentheses instead
+// console.log("1"+ 2 + 2);
+// console.log(1+ 2 + "2");    // Bad practice , use parentheses instead
 
+// Strict Comparator
+
+console.log("2" === "2")
