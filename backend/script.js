@@ -33,4 +33,14 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 // 1 -> true 0 -> false
 // Empty String -> false
-// full String -> true
+// full String -> true 
+
+/* --------------- Operations ----------------*/
+
+let value = 3
+let neg = -value
+// console.log(neg);
+
+console.log("1"+ 2 + 2);
+console.log(1+ 2 + "2");    // Bad practice , use parentheses instead
+
