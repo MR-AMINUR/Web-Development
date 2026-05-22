@@ -46,4 +46,30 @@ let neg = -value
 
 // Strict Comparator
 
-console.log("2" === "2")
+//console.log("2" === "2")
+
+// Primitive 
+
+// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId);
+// Reference (Non primitive)
+
+// Array, Objects, Functions
+
+const heros = ["Ironman", "Captain America", "Black Widow"];
+
+let myObj = {
+    name = "aminur",
+    age:23,
+}
+
+const myFunction = function () {
+    console.log("Hello India");
+    
+}
+
+console.log(myFunction);
+
