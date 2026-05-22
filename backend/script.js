@@ -61,15 +61,42 @@ console.log(id === anotherId);
 
 const heros = ["Ironman", "Captain America", "Black Widow"];
 
-let myObj = {
-    name = "aminur",
-    age:23,
-}
+// let myObj = {
+//     name = "aminur",
+//     age:23,
+// }
 
 const myFunction = function () {
     console.log("Hello India");
     
 }
 
-console.log(myFunction);
+//console.log(typeof myFunction);
+
+/*-----------------------DataTypes----------------------*/
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let mymediaName = "aminur09"
+
+let anotherName = mymediaName
+anotherName = "ramiz02"
+
+//console.log(mymediaName);
+//console.log(anotherName);
+
+let userOne = {
+    email: "aminur01mallick@gmail.com",
+    upi: "user@okhdfcbank"
+}
+
+let userTwo = userOne
+userTwo.email = "aminur09rahaman@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
 
