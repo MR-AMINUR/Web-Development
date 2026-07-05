@@ -54,7 +54,7 @@ let neg = -value
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+//console.log(id === anotherId);
 // Reference (Non primitive)
 
 // Array, Objects, Functions
@@ -93,10 +93,48 @@ let userOne = {
 let userTwo = userOne
 userTwo.email = "aminur09rahaman@gmail.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+//console.log(userOne.email);
+//console.log(userTwo.email);
 
+/*---------------------Strings---------------------*/
 
+const gameName = new String('AminurRM')
 
+// console.log(gameName[0]);
+// console.log(gameName.__proto__);
 
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+
+// const newString = gameName.substring(-5, 4)
+// console.log(newString);
+
+// const anotherString = gameName.slice(3, 1);
+// console.log(anotherString);
+ 
+/*----------------Numbers & Maths--------------------- */
+
+const marks = 400
+//console.log(marks);
+
+const balance = new Number(100)
+//console.log(balance);
+
+//console.log(balance.toString().length);
+//console.log(balance.toFixed(1));
+
+const otherNumber = 123.8954
+
+//console.log(otherNumber.toPrecision(4));
+
+//console.log(Math.min(4, 3, 6, 8));
+
+// console.log(Math.random());
+// console.log((Math.random()*10) + 1 );
+// console.log(Math.floor(Math.random()*10)+1);
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)
 
