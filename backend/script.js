@@ -136,5 +136,45 @@ const otherNumber = 123.8954
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+//console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+/*------------------Functions & Parameters--------------*/
+
+function addTwoNumbers( number1,  number2) {
+
+    return number1 + number2
+}
+
+//console.log(addTwoNumbers(4, 5))
+
+function loginUserMessage(username) {
+    return `${username} good to see you`
+}
+
+//console.log(loginUserMessage("Aminur")) 
+// "..." --> rest or spread operator 
+function calculateCartPrice(...num1) {
+    return num1
+}
+
+//console.log(calculateCartPrice(200, 400, 600, 900));
+
+const myArray = [200, 400, 877, 666]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+//console.log(returnSecondValue(myArray));
+
+const user = {
+    username : "Aminur",
+    prices: 200
+}
+
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.prices}`);
+}
+
+handleObject(user)
 
