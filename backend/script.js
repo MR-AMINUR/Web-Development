@@ -176,5 +176,28 @@ function handleObject(anyObject) {
     console.log(`Username is ${anyObject.username} and price is ${anyObject.prices}`);
 }
 
-handleObject(user)
+//handleObject(user)
 
+/*------------------Scopes----------------*/
+
+if (true) {
+    let a = 10
+    const b = 20
+    var c = 30
+}
+
+// console.log(a);
+// console.log(b);
+//console.log(c);
+
+function one() {
+    const username = "Aminur"
+
+    function two() {
+        const website = "youtube" 
+    }
+    console.log(website) //console.log(username); one() is global scope to two() but not vice versa so one() cannot access two()
+    two()
+}
+
+one()
