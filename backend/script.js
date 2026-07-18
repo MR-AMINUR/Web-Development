@@ -194,10 +194,53 @@ function one() {
     const username = "Aminur"
 
     function two() {
-        const website = "youtube" 
+        const website = "youtube"
+        //console.log(username); one() is global scope to two() but not vice versa so one() cannot access two()
     }
-    console.log(website) //console.log(username); one() is global scope to two() but not vice versa so one() cannot access two()
+    console.log(website)
     two()
 }
 
-one()
+//one()
+
+//console.log(addone(5))
+
+function addone(num) {
+    return num + 1
+}
+
+// addTwo(4) --> cannot print the result alike previous one as addTwo fucntion is stored as a variable 
+
+ const addTwo = function(num) {
+    return num + 2
+}
+
+/*--------------------------THIS & ARROW-------------------------*/
+
+const worker = {
+    username : "Mallick",
+    price : 1003,
+
+    welcomeMessage : function() {
+        console.log(`${this.username}, welcome to this github page`);
+        console.log(this);
+    }
+}
+
+// worker.welcomeMessage()
+// worker.username = "SK"
+// worker.welcomeMessage() 
+// console.log(this);
+
+
+const chai = function () {
+    let name = "Aminur"
+    console.log(this.name);
+}
+const chat = () => {
+    let name = "Aminur"
+    console.log(this.name);
+    console.log(this);
+}
+
+chat()
