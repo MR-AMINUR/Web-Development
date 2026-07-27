@@ -243,4 +243,35 @@ const chat = () => {
     console.log(this);
 }
 
-chat()
+//chat()
+
+//const add2 = (num1 , num2) => num1 + num2
+const add2 = (num1 , num2) => (num1 + num2)
+
+//console.log(add2(2, 3));
+
+/*-------------Immediately Invoked Function Expressions (IIFE)---------------*/
+// We use IIFE to control the poution of global scopes
+// ()() --> 1st parenthesis is the the fucntion description and 2nd one is immediate function call
+
+// ( () => {
+//     console.log(`DB connected`);
+// })()
+
+/*--------------------------High Order Array Loops----------------------------*/
+
+const numbers = [1, 2, 3, 4, 5]
+
+for (const num of numbers) {
+    //console.log(num);
+}
+
+const coding = ["js", "ruby", "java", "python", "cpp"]
+
+coding.forEach( function (val) {
+    //console.log(val);
+})
+
+coding.forEach( (value) => {
+    console.log(value);
+})
