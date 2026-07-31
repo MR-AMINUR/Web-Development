@@ -54,7 +54,7 @@ let neg = -value
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+//console.log(id === anotherId);
 // Reference (Non primitive)
 
 // Array, Objects, Functions
@@ -93,10 +93,185 @@ let userOne = {
 let userTwo = userOne
 userTwo.email = "aminur09rahaman@gmail.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+//console.log(userOne.email);
+//console.log(userTwo.email);
+
+/*---------------------Strings---------------------*/
+
+const gameName = new String('AminurRM')
+
+// console.log(gameName[0]);
+// console.log(gameName.__proto__);
+
+// console.log(gameName.length);
+// console.log(gameName.toUpperCase());
+
+// const newString = gameName.substring(-5, 4)
+// console.log(newString);
+
+// const anotherString = gameName.slice(3, 1);
+// console.log(anotherString);
+ 
+/*----------------Numbers & Maths--------------------- */
+
+const marks = 400
+//console.log(marks);
+
+const balance = new Number(100)
+//console.log(balance);
+
+//console.log(balance.toString().length);
+//console.log(balance.toFixed(1));
+
+const otherNumber = 123.8954
+
+//console.log(otherNumber.toPrecision(4));
+
+//console.log(Math.min(4, 3, 6, 8));
+
+// console.log(Math.random());
+// console.log((Math.random()*10) + 1 );
+// console.log(Math.floor(Math.random()*10)+1);
+
+const min = 10
+const max = 20
+
+//console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+/*------------------Functions & Parameters--------------*/
+
+function addTwoNumbers( number1,  number2) {
+
+    return number1 + number2
+}
+
+//console.log(addTwoNumbers(4, 5))
+
+function loginUserMessage(username) {
+    return `${username} good to see you`
+}
+
+//console.log(loginUserMessage("Aminur")) 
+// "..." --> rest or spread operator 
+function calculateCartPrice(...num1) {
+    return num1
+}
+
+//console.log(calculateCartPrice(200, 400, 600, 900));
+
+const myArray = [200, 400, 877, 666]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+//console.log(returnSecondValue(myArray));
+
+const user = {
+    username : "Aminur",
+    prices: 200
+}
+
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.prices}`);
+}
+
+//handleObject(user)
+
+/*------------------Scopes----------------*/
+
+if (true) {
+    let a = 10
+    const b = 20
+    var c = 30
+}
+
+// console.log(a);
+// console.log(b);
+//console.log(c);
+
+function one() {
+    const username = "Aminur"
+
+    function two() {
+        const website = "youtube"
+        //console.log(username); one() is global scope to two() but not vice versa so one() cannot access two()
+    }
+    console.log(website)
+    two()
+}
+
+//one()
+
+//console.log(addone(5))
+
+function addone(num) {
+    return num + 1
+}
+
+// addTwo(4) --> cannot print the result alike previous one as addTwo fucntion is stored as a variable 
+
+ const addTwo = function(num) {
+    return num + 2
+}
+
+/*--------------------------THIS & ARROW-------------------------*/
+
+const worker = {
+    username : "Mallick",
+    price : 1003,
+
+    welcomeMessage : function() {
+        console.log(`${this.username}, welcome to this github page`);
+        console.log(this);
+    }
+}
+
+// worker.welcomeMessage()
+// worker.username = "SK"
+// worker.welcomeMessage() 
+// console.log(this);
 
 
+const chai = function () {
+    let name = "Aminur"
+    console.log(this.name);
+}
+const chat = () => {
+    let name = "Aminur"
+    console.log(this.name);
+    console.log(this);
+}
 
+//chat()
 
+//const add2 = (num1 , num2) => num1 + num2
+const add2 = (num1 , num2) => (num1 + num2)
 
+//console.log(add2(2, 3));
+
+/*-------------Immediately Invoked Function Expressions (IIFE)---------------*/
+// We use IIFE to control the poution of global scopes
+// ()() --> 1st parenthesis is the the fucntion description and 2nd one is immediate function call
+
+// ( () => {
+//     console.log(`DB connected`);
+// })()
+
+/*--------------------------High Order Array Loops----------------------------*/
+
+const numbers = [1, 2, 3, 4, 5]
+
+for (const num of numbers) {
+    //console.log(num);
+}
+
+const coding = ["js", "ruby", "java", "python", "cpp"]
+
+coding.forEach( function (val) {
+    //console.log(val);
+})
+
+coding.forEach( (value) => {
+    console.log(value);
+})
