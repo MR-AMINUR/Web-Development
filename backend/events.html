@@ -26,9 +26,23 @@
     // document.getElementById('owl').onclick = () => {
     //     alert("Owl clicked!!")
     // }
+    // document.getElementById('owl').addEventListener('click', (e) => {
+    //     alert("Owl Clicked Once more");
+    //     console.log(e);
+    // }, false)
 
-    document.getElementById('images').addEventListener('click', function (e) {
+    /*Topics to focus*/
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    document.getElementById('images').addEventListener('click', (e) => {
         console.log("clicked inside the ul");
+    }, false)
+
+    document.getElementById('owl').addEventListener('click', (e) => {
+        console.log("Once again this is owl who got clicked");
     }, false)
 </script>
 </html>
