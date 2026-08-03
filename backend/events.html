@@ -23,8 +23,12 @@
    </div>
 </body>
 <script>
-    document.getElementById('owl').onclick = () => {
-        alert("Owl clicked!!")
-    }
+    // document.getElementById('owl').onclick = () => {
+    //     alert("Owl clicked!!")
+    // }
+
+    document.getElementById('images').addEventListener('click', function (e) {
+        console.log("clicked inside the ul");
+    }, false)
 </script>
 </html>
