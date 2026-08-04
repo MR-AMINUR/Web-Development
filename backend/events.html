@@ -37,12 +37,21 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    document.getElementById('images').addEventListener('click', (e) => {
-        console.log("clicked inside the ul");
-    }, false)
+    // document.getElementById('images').addEventListener('click', (e) => {
+    //     console.log("clicked inside the ul");
+    // }, false)
 
-    document.getElementById('owl').addEventListener('click', (e) => {
-        console.log("Once again this is owl who got clicked");
+    // document.getElementById('owl').addEventListener('click', (e) => {
+    //     console.log("Once again this is owl who got clicked");
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', (e) => {
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
     }, false)
 </script>
 </html>
