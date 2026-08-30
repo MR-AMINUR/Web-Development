@@ -85,4 +85,13 @@ async function getAllUsers() {
     }
 }
 
-getAllUsers()
+// getAllUsers()
+
+fetch('https://api.github.com/users/MR-AMINUR')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
